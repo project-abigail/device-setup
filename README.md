@@ -6,12 +6,10 @@ To setup an Abigail device for the first time, clone the `abigail-device`, `wifi
 sudo apt-get install -y git
 git clone https://github.com/project-abigail/abigail-device
 git clone https://github.com/project-abigail/wifi-setup
-git clone https://github.com/project-abigail/user-setup
 ./abigail-device/bootstrap-scripts/raspberry-pi-setup.sh
 ./wifi-setup/setup-scripts/raspberry-pi-setup.sh
 cd abigail-device; npm install; cd ..
 cd wifi-setup; npm install; cd ..
-cd user-setup; npm install; cd ..
 ```
 
 Note: these scripts take approximately 1.5 hours to execute.
