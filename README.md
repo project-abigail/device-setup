@@ -8,6 +8,11 @@ git clone https://github.com/project-abigail/wifi-setup
 git clone https://github.com/project-abigail/user-setup
 ./abigail-device/bootstrap-scripts/raspberry-pi-setup.sh
 ./wifi-setup/setup-scripts/raspberry-pi-setup.sh
+cd abigail-device; npm install; cd ..
+git clone https://github.com/project-abigail/wifi-setup
+cd wifi-setup; npm install; cd ..
+git clone https://github.com/project-abigail/user-setup
+cd user-setup; npm install; cd ..
 ```
 
 Note: these scripts take approximately 1.5 hours to execute.
