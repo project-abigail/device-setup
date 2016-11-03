@@ -14,7 +14,13 @@ cd wifi-setup; npm install; cd ..
 
 Note: these scripts take approximately 1.5 hours to execute.
 
-When the scripts are finished executing, reboot the device. Then:
+When the scripts are finished executing, run the following command:
+```
+sudo raspi-config
+```
+and choose 'Advanced Options' and then 'I2C' and then 'Yes' to enable the ARM I2C interface.
+
+Then, reboot the device. After rebooting:
 
  * From a laptop, monitor available networks and connect to `Abigail wifi setup` when it appears in the list
  * Run the user-setup script to create users and the family group
